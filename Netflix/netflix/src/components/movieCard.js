@@ -4,7 +4,7 @@ import {Card,ListGroupItem,ListGroup} from 'react-bootstrap';
 const MovieCard = ({movie}) => {
     return (
         <div>
-            
+            <div className="Card">
             <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
   <Card.Body>
@@ -16,11 +16,11 @@ const MovieCard = ({movie}) => {
     <ListGroupItem>{movie.description}</ListGroupItem>
   </ListGroup>
   <Card.Body>
-    <Card.Link href="#">Add</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
+    
   </Card.Body>
 </Card>
-
+              </div>
+                   
         </div>
     )
 }
